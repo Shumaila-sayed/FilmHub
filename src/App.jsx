@@ -17,14 +17,17 @@ const API_OPTIONS = {
 };
 
 const App = () => {
+	const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('');
 	const [searchTerm, setSearchTerm] = useState('');
-	const [errorMessage, setErrorMessage] = useState('');
-    const [movieList, setMovieList] = useState([]);
-	const [trendingMovies, setTrendingMovies] = useState([]);    
-	const [isLoading, setIsLoading] = useState(false);
-    const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('');
 
-  // debouncing the search term to prevent making too many API request by waiting for the user to stop typing for 500ms
+	const [movieList, setMovieList] = useState([]);
+	const [isLoading, setIsLoading] = useState(false);
+	const [errorMessage, setErrorMessage] = useState('');
+   
+	// TODO: implement is loading and error message for trending movies as well
+	const [trendingMovies, setTrendingMovies] = useState([]);    
+	
+	
     useDebounce(() => setDebouncedSearchTerm(searchTerm), 500, [searchTerm])
     
 	const fetchMovies = async (query = '') => {
@@ -86,11 +89,11 @@ const App = () => {
 			<div className='pattern' />
 			<div className='wrapper'>
 				<header>
-					<img
+					{/* <img
 						src='./hero.png'
 						alt='Hero banner'
-					/>
-					<h1 className='text-7xl'>
+					/> */}
+					<h1>
 						Find <span className='text-gradient'>Movies</span> You'll Enjoy
 						Without the Hassle
 					</h1>
