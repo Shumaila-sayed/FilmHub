@@ -1,12 +1,28 @@
-# React + Vite
+# 🎬 Movie App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek and responsive **Movie App** built with **React, TailwindCSS, and Appwrite** that lets users explore trending and popular movies.  
 
-Currently, two official plugins are available:
+## 🚀 Features  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📌 **Trending & Popular Movies** – Fetches real-time data  
+- 🔎 **Movie Search** – Find your favorite movies instantly  
+- 📦 **Appwrite Database** – Stores and manages movie data  
+- 🌍 **Deployed on Vercel** – Live and accessible anywhere  
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack  
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React, TailwindCSS  
+- **Backend & Database**: Appwrite  
+- **Deployment**: Vercel  
+
+## 📸 Screenshots  
+
+![Movie App ScreenShot](/public//site-ss.png)
+
+## 🔗 Live Demo  
+
+[View it Live](https://film-hub-phi.vercel.app/)
+
+## 🎓 Credits
+
+This project was inspired by [JavaScript Mastery](https://www.youtube.com/watch?v=dCLhUialKPQ&t=7276s)
